@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D7B3D5D2339E33A0041B7BB /* LoginViewModelMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B3D5C2339E33A0041B7BB /* LoginViewModelMocks.swift */; };
-		0D7B3D602339EADA0041B7BB /* Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B3D5F2339EADA0041B7BB /* Serializable.swift */; };
 		0DC50DF42334A40C00CE5C3D /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC50DF22334A40C00CE5C3D /* LoginViewModelTests.swift */; };
+		0DC569D6233C973A00A41AFE /* UserServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC569D5233C973A00A41AFE /* UserServiceMock.swift */; };
 		0DC950C5233B40CA00CD01CC /* LoginViewControllerUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC950C4233B40CA00CD01CC /* LoginViewControllerUITest.swift */; };
 		5A5A9A5EB39C035C4E831ACB /* Pods_iOSArchitecture_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C363BA57B0BC85052E594ACA /* Pods_iOSArchitecture_MVVM.framework */; };
 		7075C470223A4ED00029CE31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7075C46F223A4ED00029CE31 /* AppDelegate.swift */; };
@@ -62,9 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D7B3D5C2339E33A0041B7BB /* LoginViewModelMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelMocks.swift; sourceTree = "<group>"; };
-		0D7B3D5F2339EADA0041B7BB /* Serializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serializable.swift; sourceTree = "<group>"; };
 		0DC50DF22334A40C00CE5C3D /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		0DC569D5233C973A00A41AFE /* UserServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceMock.swift; sourceTree = "<group>"; };
 		0DC950C4233B40CA00CD01CC /* LoginViewControllerUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerUITest.swift; sourceTree = "<group>"; };
 		3B99C071787FD14A1E02DF2E /* Pods-iOSArchitecture_MVVMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSArchitecture_MVVMUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOSArchitecture_MVVMUITests/Pods-iOSArchitecture_MVVMUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		65EF42074EB3B78E5D6E6995 /* Pods_iOSArchitecture_MVVMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSArchitecture_MVVMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,17 +140,9 @@
 		0D7B3D5B2339E3230041B7BB /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				0D7B3D5C2339E33A0041B7BB /* LoginViewModelMocks.swift */,
+				0DC569D5233C973A00A41AFE /* UserServiceMock.swift */,
 			);
 			path = Mocks;
-			sourceTree = "<group>";
-		};
-		0D7B3D5E2339EACD0041B7BB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				0D7B3D5F2339EADA0041B7BB /* Serializable.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		7013DE6522537EF4005C12D1 /* Controllers */ = {
@@ -244,7 +234,6 @@
 		7075C4A1223A51000029CE31 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
-				0D7B3D5E2339EACD0041B7BB /* Model */,
 				7075C4A6223A524E0029CE31 /* ViewModel */,
 				7075C4A9223A52780029CE31 /* Controller */,
 			);
@@ -664,7 +653,6 @@
 				7075C478223A4ED00029CE31 /* iOSArchitecture_MVVM.xcdatamodeld in Sources */,
 				7075C4C8223A55150029CE31 /* CommonExtensions.swift in Sources */,
 				70F90C37223BA28700DD686F /* ApiConstant.swift in Sources */,
-				0D7B3D602339EADA0041B7BB /* Serializable.swift in Sources */,
 				70F90C3D223BB08800DD686F /* APIService.swift in Sources */,
 				70F90C3E223BB08800DD686F /* Reachability.swift in Sources */,
 				7075C470223A4ED00029CE31 /* AppDelegate.swift in Sources */,
@@ -676,7 +664,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DC50DF42334A40C00CE5C3D /* LoginViewModelTests.swift in Sources */,
-				0D7B3D5D2339E33A0041B7BB /* LoginViewModelMocks.swift in Sources */,
+				0DC569D6233C973A00A41AFE /* UserServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

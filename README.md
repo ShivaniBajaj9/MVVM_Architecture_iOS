@@ -67,5 +67,25 @@ Below are points which are handled within this sample app.
 3. **NSURLSession** to call web services
 4. **Codable protocol** to parse JSON response and generate model class with help of **Generics**
 
+### Version 1.1
+
+### Protocol Oriented approach :
+##### Protocol oriented approach is to be followed for service classes for initiating the unit tests, as it allows to implement the injection dependency, so that mocking be performed in unit tests.
+- UserServiceProtocol - This Protocol is being made to be implemented by the actual service class and mocked service class for testing. LoginViewModel can accept the network service object of type UserServiceProtocol to perform constructor dependency injection.
+
+### Unit Test cases :
+#####   All the unit tests classes are contained in iOSArchitecture_MVVMTests Bundle:
+- LoginViewModelTests - It contains the unit tests for the validation and login api. Unit test classes are being made for all the controllers to test the logics being applied.
+
+##### Mocks - Mocks contains the mocking classes being made to separate the tests for network classes and other controllers and apply the concept of modularity.
+- UserServiceMock - This class is being made as a mock/fake class for UserService using the UserServiceProtocol, so that asynchronous calls can be faked to test the actual logic.
+
+### UI Test cases :
+#####  UI test classes are being made for testing the UI as the actual user tests it.
+- LoginViewControllerUITest - This class contains the example UI test for the LoginViewController. In the same way, different UI test classes can be made to test different controllers.
+
+### Codable Models :
+##### Codable models are being made for the encoding and decoding of json.
+- User - User model is made to parse and use the user data received when the user logs in or sign up. This is an example, so more fields can be added based upon your requirements.
 
 
